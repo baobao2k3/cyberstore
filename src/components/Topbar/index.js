@@ -26,7 +26,7 @@ function Topbar() {
                         </span>
                     </p>
                 </div>
-                <div className={cx('topbarList')}>
+                <div className={cx('topbarList', 'listIcon')}>
                     <p>
                         <span>
                             <a>

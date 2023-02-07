@@ -2,6 +2,7 @@
     top: 0;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #e5e7f2;
 }
 .wrapTopbar {
     width: 1300px;
@@ -23,9 +24,13 @@
 }
 .wrapTopbar span {
     font-size: 11.2px;
+    font-weight: 500;
     color: #494949;
     text-transform: uppercase;
-    margin-right: 27px;
+    margin-right: 26px;
+}
+.listIcon span {
+    margin-right: 10px;
 }
 .topbarText {
     padding-left: 10px;
