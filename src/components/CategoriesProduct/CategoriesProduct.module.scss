@@ -1,0 +1,118 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+
+    .wrapMain {
+        width: 1300px;
+        display: flex;
+    }
+}
+.categoriesMenu {
+    border: 2px solid #e5e7f2;
+    padding: 43px 43px 0;
+    height: 67%;
+    width: 25%;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 40px;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 22px;
+        }
+
+        li {
+            padding: 4px 0;
+            color: #494949;
+            font-size: 13px;
+            font-weight: 400;
+            cursor: pointer;
+            &:hover {
+                color: var(--primary);
+                &::after {
+                    width: 50%;
+                }
+            }
+            &::after {
+                content: '';
+                display: block;
+                background-color: var(--primary);
+                height: 2px;
+                width: 0;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.categoriesListItem {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3333%);
+
+    .categoriesItem {
+        height: 415px;
+        padding: 0 25px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        border-width: 0 0 0 1px;
+        border-color: #e5e7f2;
+        border-style: solid;
+
+        .imgItem {
+            img {
+                width: 100%;
+            }
+        }
+
+        .headerItem {
+            color: #adaeb0;
+            font-size: 13px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+
+            div {
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 17%;
+            }
+        }
+        .desItem {
+            div {
+                color: #f8e900;
+            }
+            span {
+                font-weight: 600;
+                color: #000;
+                font-size: 14px;
+                line-height: 1.3em;
+            }
+            h5 {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        .cartItems {
+            display: flex;
+            justify-content: space-between;
+            line-height: 1;
+            margin: 14px 0 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}
+.redBk {
+    color: red;
+}

@@ -1,0 +1,25 @@
+{
+    "slide": [
+        {
+            "id": 1,
+            "title": "Cutting Edge Technology",
+            "titleRest": "Store",
+            "decription": "7Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqenim ad minim",
+            "img": "https://cyberstore.qodeinteractive.com/wp-content/uploads/2017/08/h1-slide-1-img-1.png"
+        },
+        {
+            "id": 1,
+            "title": "It's Powerful. It's",
+            "titleRest": "CyberStore",
+            "decription": "7Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqenim ad minim",
+            "img": "https://cyberstore.qodeinteractive.com/wp-content/uploads/2017/08/h1-slide-3-img-1.png"
+        },
+        {
+            "id": 1,
+            "title": "Mordern and Just",
+            "titleRest": "Captivating",
+            "decription": "7Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqenim ad minim",
+            "img": "https://cyberstore.qodeinteractive.com/wp-content/uploads/2017/08/h1-slide-2-img-1.png"
+        }
+    ]
+}

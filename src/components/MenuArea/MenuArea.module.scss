@@ -33,25 +33,87 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.WrapBigItem {
+    position: relative;
+    &:hover .listBigItem {
+        z-index: 3;
+        display: flex !important;
+        top: 200%;
+    }
+}
 .wrapItem {
     position: relative;
+    &:hover .listItem {
+        z-index: 3;
+        display: block;
+        top: 200%;
+    }
 }
+
+.listBigItem {
+    top: 200%;
+    display: none;
+    color: black;
+    position: absolute;
+    list-style: none;
+    padding: 20px 20px;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #a398d691;
+    border-radius: 3px;
+    min-width: 250px;
+    box-shadow: 0.5px 2px 19px 2px #bc7e7e;
+    animation: faceoutmodal ease 0.3s;
+    li {
+        padding: 5px 0;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            min-width: 192px;
+
+            li {
+                cursor: pointer;
+                color: #504e4e;
+                &:hover {
+                    color: var(--primary);
+                    &::after {
+                        width: 61%;
+                    }
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    background-color: var(--primary);
+                    height: 3px;
+                    width: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
 .listItem {
+    display: none;
     color: black;
     position: absolute;
     list-style: none;
     padding: 0;
-    position: absolute;
     top: 200%;
     background-color: #fff;
     border: 2px solid #a398d691;
     border-radius: 3px;
     min-width: 173px;
     box-shadow: 0.5px 2px 19px 2px #bc7e7e;
+    animation: faceoutmodal ease 0.3s;
 }
+
 .listItem li {
+    cursor: pointer;
     padding: 5px;
     border-bottom: 1px solid #e5e7f2;
+    color: #504e4e;
     &:hover {
         color: var(--primary);
         &::after {
@@ -65,5 +127,33 @@
         height: 3px;
         width: 0;
         transition: all 0.2s ease-in-out;
+    }
+}
+
+.items {
+    span {
+        cursor: pointer;
+    }
+    &::after {
+        content: '';
+        display: block;
+        background-color: transparent;
+        height: 30px;
+        width: 50px;
+        position: absolute;
+    }
+    &:hover {
+        color: #ffffffcc;
+    }
+}
+
+@keyframes faceoutmodal {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
